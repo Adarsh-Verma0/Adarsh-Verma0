@@ -10,7 +10,7 @@
 
 <!-- Animated Profile Views Counter -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=adarshverma&label=✨%20Profile%20Views&color=0e75b6&style=flat-square" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=adarshverma&label=✨%20Profile%20Views&color=0e75b6&style=flat-square&abbreviated=true" alt="profile views" />
   <img src="https://img.shields.io/badge/🚀-Active_Learner-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/⚡-Embedded_Systems-00F7FF?style=flat-square" />
 </p>
@@ -19,9 +19,26 @@
 
 ### 👨‍💻 About Me
 
-| | |
-|:---|:---|
-| <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="120" /> | **I am a motivated B.Tech student in Electronics and Communication Engineering at Gautam Buddha University** with a strong interest in embedded systems, circuit design, and emerging communication technologies.<br/><br/>🔬 Worked on **"Dual Display Smart Health Monitoring System with Alert Mechanism"** - sensor integration, microcontroller interfacing, real-time alert implementation<br/><br/>💡 Passionate about **hardware-software integration** and system optimization<br/><br/>🎯 Seeking **internships, research collaborations** where I can contribute and grow<br/><br/>📍 Based in **Delhi, India** |
+<table>
+  <tr>
+    <td width="60%">
+      I am a motivated B.Tech student in <strong>Electronics and Communication Engineering</strong> at <strong>Gautam Buddha University</strong> with a strong interest in embedded systems, circuit design, and emerging communication technologies.
+      <br/><br/>
+      🔬 Worked on <strong>"Dual Display Smart Health Monitoring System with Alert Mechanism"</strong> - sensor integration, microcontroller interfacing, real-time alert implementation
+      <br/><br/>
+      💡 Passionate about <strong>hardware-software integration</strong> and system optimization
+      <br/><br/>
+      🎯 Seeking <strong>internships, research collaborations</strong> where I can contribute and grow
+      <br/><br/>
+      📍 Based in <strong>Delhi, India</strong>
+    </td>
+    <td align="center" width="40%">
+      <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="150" />
+      <br/>
+      <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="150" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -79,25 +96,6 @@
   <img src="https://img.shields.io/badge/Circuit_Design-FF5722?style=flat-square" />
   <img src="https://img.shields.io/badge/Microcontroller_Interfacing-607D8B?style=flat-square" />
   <img src="https://img.shields.io/badge/Real_time_Alert_Systems-E91E63?style=flat-square" />
-</p>
-
----
-
-### 📊 GitHub Analytics
-
-<!-- Animated Stats Cards - These will work once you have repos -->
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarshverma&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00F7FF&icon_color=00F7FF&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarshverma&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=00F7FF" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adarshverma&theme=radical&hide_border=true&background=0d1117&stroke=00F7FF&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" />
-</p>
-
-<!-- Animated Activity Graph -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=adarshverma&theme=react-dark&bg_color=0d1117&color=00F7FF&line=00F7FF&point=FFFFFF&hide_border=true" width="90%" />
 </p>
 
 ---
