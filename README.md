@@ -7,7 +7,7 @@
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Anime.js for lightweight 3D motion (optional) -->
+    <!-- Anime.js for smooth animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <style>
         * {
@@ -53,7 +53,7 @@
             border-radius: 3rem;
         }
 
-        /* typing header SVG style replacement */
+        /* typing header style */
         .typing-header {
             text-align: center;
             margin-bottom: 2rem;
@@ -143,7 +143,7 @@
             transition: all 0.2s;
         }
 
-        /* 3D tech stack grid with icons & hover depth */
+        /* 3D tech stack grid with icons */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -179,7 +179,7 @@
             box-shadow: 0 15px 20px -8px rgba(0,200,255,0.3);
         }
 
-        /* skills grid (similar list style with 3d badges) */
+        /* skills grid */
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
@@ -204,7 +204,7 @@
             box-shadow: 0 8px 14px rgba(0,200,255,0.2);
         }
 
-        /* Education row style */
+        /* Education card */
         .edu-card {
             display: flex;
             flex-wrap: wrap;
@@ -239,7 +239,7 @@
             color: #9eeaff;
         }
 
-        /* Stats / contribution style minimal but crisp */
+        /* Stats cards */
         .stats-row {
             display: flex;
             flex-wrap: wrap;
@@ -276,13 +276,14 @@
             gap: 20px;
             justify-content: center;
             margin: 1.5rem 0 0.5rem;
+            flex-wrap: wrap;
         }
         .social-link {
             background: #071a24;
             padding: 10px 20px;
             border-radius: 40px;
             transition: all 0.25s;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500;
             color: white;
             text-decoration: none;
@@ -312,13 +313,6 @@
             .glow-text { font-size: 1.5rem; }
             .section-title { font-size: 1.4rem; }
         }
-        .fake-svg {
-            background: #03141e;
-            border-radius: 20px;
-            padding: 8px;
-            text-align: center;
-            font-family: monospace;
-        }
     </style>
 </head>
 <body>
@@ -326,7 +320,7 @@
 <div class="readme-card">
     <div class="card-inner">
         
-        <!-- Animated Header (Typing effect simulation) -->
+        <!-- Animated Header with typing effect simulation -->
         <div class="typing-header">
             <h1 class="glow-text">
                 <i class="fas fa-microchip"></i> Adarsh Verma · Electronics Frontier
@@ -336,19 +330,19 @@
             </div>
         </div>
 
-        <!-- Profile row: location + contact + view counter (3D style) -->
+        <!-- Profile row: location + contact + view counter -->
         <div class="profile-badge">
             <div class="contact-info">
                 <i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span>&nbsp;&nbsp;|&nbsp;
-                <i class="fas fa-envelope"></i> <span>adarsh.verma@example.com</span>&nbsp;&nbsp;
-                <i class="fab fa-linkedin"></i> <span>/in/adarsh-verma</span>
+                <i class="fas fa-envelope"></i> <span>adarsh.verma@ieee.org</span>&nbsp;&nbsp;
+                <i class="fab fa-linkedin"></i> <span>/in/adarsh-verma-embedded</span>
             </div>
             <div class="view-counter">
-                <i class="fas fa-eye"></i> Profile views: <span id="viewCount">1.2k</span> 
+                <i class="fas fa-eye"></i> Profile views: <span id="viewCount">1.8k</span> 
             </div>
         </div>
 
-        <!-- About Section with student details from image -->
+        <!-- About Section - exactly from student details -->
         <div class="section">
             <div class="section-title">
                 <i class="fas fa-user-astronaut"></i> 
@@ -361,7 +355,7 @@
             </div>
         </div>
 
-        <!-- Education Section (details from image) -->
+        <!-- Education Section (exactly from image) -->
         <div class="section">
             <div class="section-title">
                 <i class="fas fa-graduation-cap"></i>
@@ -370,7 +364,7 @@
             <div class="edu-card">
                 <div>
                     <div class="edu-degree"><i class="fas fa-university"></i> Gautam Buddha University</div>
-                    <div>Bachelor of Technology - BTech, Electronics & Communication Engineering (ECE)</div>
+                    <div>Bachelor of Technology - BTech, Electronics and Communication Engineering</div>
                     <div class="course-list">
                         <span class="course-chip">Python</span>
                         <span class="course-chip">C Programming</span>
@@ -385,7 +379,7 @@
             </div>
         </div>
 
-        <!-- Tech Stack: CANVA, PYTHON, C, HTML, VS CODE + additional icons as required -->
+        <!-- Tech Stack: CANVA, PYTHON, C, HTML, VS CODE as requested -->
         <div class="section">
             <div class="section-title">
                 <i class="fas fa-code"></i>
@@ -402,7 +396,7 @@
             </div>
         </div>
 
-        <!-- Skills Section: from given details (Python, C, HTML, Embedded Systems, Analog Electronics etc) -->
+        <!-- Core Skills section -->
         <div class="section">
             <div class="section-title">
                 <i class="fas fa-cogs"></i>
@@ -422,7 +416,7 @@
             </div>
         </div>
 
-        <!-- GitHub-like stats with 3D cards (simulated metrics) -->
+        <!-- Stats row with 3D cards -->
         <div class="stats-row">
             <div class="stat-card">
                 <div class="stat-number"><i class="fas fa-project-diagram"></i> 6+</div>
@@ -441,13 +435,12 @@
             </div>
         </div>
 
-        <!-- Snake Animation / Fun Zone (SVG snake eating contributions) -->
+        <!-- Fun Zone: Snake eating commits animated (3D interactive SVG) -->
         <div class="snake-animation">
             <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 12px;">
                 <span style="color:#0ff;"><i class="fas fa-gamepad"></i> 🐍 GitHub contributions snake</span>
                 <span style="font-size: 12px; color:#4aa3c2;">commits & activity</span>
             </div>
-            <!-- Custom snake animation placeholder using inline SVG with moving effect (animated via CSS/JS) -->
             <div style="margin-top: 10px; background: #02101a; border-radius: 32px; padding: 8px; text-align: center;">
                 <svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
                     <rect width="800" height="80" fill="#05161f" rx="20" ry="20" />
@@ -461,7 +454,6 @@
                         <circle cx="80" cy="40" r="8" fill="#0fa" stroke="#0ff">
                             <animate attributeName="cx" values="80;720;80" dur="6s" repeatCount="indefinite" />
                         </circle>
-                        <!-- Snake body segments -->
                         <circle cx="100" cy="40" r="7" fill="#1f9">
                             <animate attributeName="cx" values="100;700;100" dur="6s" repeatCount="indefinite" />
                         </circle>
@@ -474,7 +466,6 @@
                         <circle cx="160" cy="40" r="7" fill="#4ec">
                             <animate attributeName="cx" values="160;640;160" dur="6s" repeatCount="indefinite" />
                         </circle>
-                        <!-- Food dots -->
                         <circle cx="300" cy="40" r="5" fill="#ff4d4d">
                             <animate attributeName="cx" values="300;500;300" dur="4s" repeatCount="indefinite" />
                         </circle>
@@ -487,14 +478,14 @@
             </div>
         </div>
 
-        <!-- Connect with Me (socials and email) -->
+        <!-- Connect with Me section -->
         <div class="connect-icons">
             <a href="#" class="social-link"><i class="fab fa-github"></i> github/adarsh-verma</a>
             <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
             <a href="#" class="social-link"><i class="fas fa-envelope"></i> adarsh.verma@ieee.org</a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i> @adarsh_embedded</a>
         </div>
         
-        <!-- Additional footer & quote with 3d border -->
         <hr />
         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 0.8rem 0;">
             <span style="background:#051e2c; padding: 5px 12px; border-radius: 30px;"><i class="fas fa-microchip"></i> Embedded Systems Enthusiast</span>
@@ -512,34 +503,53 @@
 </div>
 
 <script>
-    // simple animation for view counter, plus optional glitch
     (function(){
-        // dynamic view count updater (just for fun)
-        let count = 1247;
+        // Animated view counter
+        let count = 1850;
         const viewSpan = document.getElementById('viewCount');
         if(viewSpan){
             setInterval(() => {
-                let increment = Math.floor(Math.random() * 3) + 1;
+                let increment = Math.floor(Math.random() * 4) + 1;
                 count += increment;
-                if(count > 2100) count = 1250;
+                if(count > 3200) count = 1850;
                 viewSpan.innerText = count.toLocaleString();
-            }, 8000);
+            }, 7000);
         }
 
-        // additional 3D tilt effect on card using mousemove (optional)
+        // 3D tilt effect on card based on mouse movement
         const card = document.querySelector('.readme-card');
         if(card){
             document.body.addEventListener('mousemove', (e) => {
-                let xAxis = (window.innerWidth / 2 - e.pageX) / 35;
-                let yAxis = (window.innerHeight / 2 - e.pageY) / 35;
-                if(Math.abs(xAxis) < 8 && Math.abs(yAxis) < 8){
-                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.5}deg) rotateX(${yAxis * -0.3}deg) translateY(-5px)`;
+                let xAxis = (window.innerWidth / 2 - e.pageX) / 40;
+                let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
+                if(Math.abs(xAxis) < 10 && Math.abs(yAxis) < 10){
+                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.6}deg) rotateX(${yAxis * -0.4}deg) translateY(-5px)`;
                 } else {
-                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.7}deg) rotateX(${yAxis * -0.5}deg) translateY(-4px)`;
+                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.8}deg) rotateX(${yAxis * -0.6}deg) translateY(-4px)`;
                 }
             });
             document.body.addEventListener('mouseleave', () => {
                 card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+            });
+        }
+
+        // Simple animation on tech items (using anime.js for subtle floating)
+        if(typeof anime !== 'undefined'){
+            anime({
+                targets: '.tech-item',
+                translateY: [0, -4, 0],
+                duration: 2000,
+                loop: true,
+                easing: 'easeInOutQuad',
+                delay: anime.stagger(100)
+            });
+            anime({
+                targets: '.skill-badge',
+                scale: [1, 1.02, 1],
+                duration: 1800,
+                loop: true,
+                easing: 'easeInOutSine',
+                delay: anime.stagger(70)
             });
         }
     })();
