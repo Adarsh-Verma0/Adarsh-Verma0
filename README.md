@@ -1,558 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Adarsh Verma · Electronics Engineer | Embedded Systems & IoT</title>
-    <!-- Google Fonts & Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Anime.js for smooth animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!-- Animated Header SVG -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Adarsh+Verma;B.Tech+ECE+Student+%40+Gautam+Buddha+University;Embedded+Systems+%26+IoT+Enthusiast;Circuit+Design+%7C+Hardware+Engineering;Aspiring+Electronics+Engineer" alt="Typing SVG" />
+</p>
 
-        body {
-            background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
-            font-family: 'Inter', 'Space Grotesk', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem 1.5rem;
-        }
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=adarshverma&label=Profile%20Views&color=0e75b6&style=flat-square" alt="profile views" />
+</p>
 
-        /* main glassmorphic card with 3D transform & subtle rotation */
-        .readme-card {
-            max-width: 1100px;
-            width: 100%;
-            background: rgba(12, 20, 30, 0.65);
-            backdrop-filter: blur(14px);
-            border-radius: 3rem;
-            border: 1px solid rgba(0, 247, 255, 0.25);
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 247, 255, 0.1) inset, 0 0 20px rgba(0, 247, 255, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            transform-style: preserve-3d;
-            perspective: 1200px;
-            overflow: hidden;
-        }
+---
 
-        .readme-card:hover {
-            transform: translateY(-8px) rotateX(1deg) rotateY(0.5deg);
-            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(0, 247, 255, 0.3) inset;
-        }
+### 👨‍💻 About Me
 
-        /* inner content with slight 3d depth */
-        .card-inner {
-            padding: 2.2rem 2rem;
-            background: radial-gradient(ellipse at top left, rgba(20, 40, 55, 0.3), rgba(2, 8, 18, 0.6));
-            border-radius: 3rem;
-        }
+I am a motivated B.Tech student in **Electronics and Communication Engineering** at **Gautam Buddha University** with a strong interest in embedded systems, circuit design, and emerging communication technologies.
 
-        /* typing header style */
-        .typing-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .glow-text {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #a5f0ff, #2ad4e3, #0aa0ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 2px 5px rgba(0,255,255,0.2);
-            letter-spacing: -0.5px;
-        }
-        .subhead {
-            color: #bbf0ff;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            border-bottom: 1px dashed #2ad4e3;
-            display: inline-block;
-            padding-bottom: 6px;
-        }
+- 🔬 Worked on **"Dual Display Smart Health Monitoring System with Alert Mechanism"** - sensor integration, microcontroller interfacing, real-time alert implementation
+- 💡 Passionate about **hardware-software integration** and system optimization
+- 🎯 Seeking **internships, research collaborations** where I can contribute and grow
+- 📍 Based in **Delhi, India**
 
-        /* Profile badge row */
-        .profile-badge {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            background: rgba(0, 20, 30, 0.5);
-            border-radius: 2rem;
-            padding: 0.8rem 1.5rem;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(0,247,255,0.2);
-        }
-        .contact-info i {
-            margin-right: 8px;
-            color: #2ad4e3;
-        }
-        .contact-info span, .location {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #caf0ff;
-        }
-        .view-counter {
-            background: #0a1424;
-            padding: 6px 14px;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #00e0ff;
-            box-shadow: 0 0 6px cyan;
-        }
+---
 
-        /* section styles */
-        .section {
-            margin: 2.2rem 0;
-        }
-        .section-title {
-            font-size: 1.7rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-left: 5px solid #0ff;
-            padding-left: 1rem;
-            color: #eef5ff;
-            letter-spacing: -0.3px;
-            text-shadow: 0 0 3px rgba(0,255,255,0.4);
-        }
-        .section-title i {
-            font-size: 1.6rem;
-            color: #0ff;
-        }
+### 🎓 Education
 
-        .about-text, .edu-desc {
-            background: rgba(0, 0, 0, 0.35);
-            padding: 1.2rem 1.5rem;
-            border-radius: 1.5rem;
-            border: 1px solid rgba(0, 247, 255, 0.2);
-            backdrop-filter: blur(2px);
-            color: #e2edf7;
-            line-height: 1.5;
-            font-weight: 400;
-            transition: all 0.2s;
-        }
+| **Gautam Buddha University** | 2025 – Present |
+|:---|:---:|
+| **Bachelor of Technology - BTech** | Electronics & Communication Engineering |
 
-        /* 3D tech stack grid with icons */
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-            justify-content: center;
-        }
-        .tech-item {
-            background: rgba(16, 32, 48, 0.7);
-            backdrop-filter: blur(8px);
-            padding: 0.7rem 1.3rem;
-            border-radius: 2rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            font-size: 1rem;
-            border: 1px solid rgba(0, 247, 255, 0.4);
-            color: #ddf4ff;
-            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            transform: translateZ(0);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        .tech-item i, .tech-item img {
-            font-size: 1.4rem;
-            width: 28px;
-            text-align: center;
-        }
-        .tech-item:hover {
-            transform: translateY(-6px) scale(1.05) rotateZ(0.5deg);
-            background: #0a2a3ae0;
-            border-color: #0ff;
-            box-shadow: 0 15px 20px -8px rgba(0,200,255,0.3);
-        }
+**Coursework:** Python · C Programming · Embedded Systems · Analog Electronics · Signal & Systems · IoT Basics · HTML
 
-        /* skills grid */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 12px;
-        }
-        .skill-badge {
-            background: linear-gradient(145deg, #10222e, #07121c);
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-weight: 500;
-            font-size: 0.85rem;
-            color: #b3f0ff;
-            border: 1px solid #2ad4e360;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-            transition: 0.2s;
-        }
-        .skill-badge:hover {
-            transform: translateY(-3px);
-            background: #0c3e52;
-            border-color: cyan;
-            box-shadow: 0 8px 14px rgba(0,200,255,0.2);
-        }
+---
 
-        /* Education card */
-        .edu-card {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: baseline;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 1.2rem 1.5rem;
-            border-radius: 1.8rem;
-            border-left: 4px solid cyan;
-        }
-        .edu-degree {
-            font-weight: 800;
-            font-size: 1.2rem;
-            color: #eef5ff;
-        }
-        .edu-date {
-            color: #2ad4e3;
-            font-weight: 500;
-        }
-        .course-list {
-            margin-top: 12px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .course-chip {
-            background: #02141f;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: #9eeaff;
-        }
+### 🚀 Tech Stack
 
-        /* Stats cards */
-        .stats-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin: 2rem 0 1rem;
-        }
-        .stat-card {
-            background: rgba(2, 15, 25, 0.7);
-            border-radius: 1.5rem;
-            padding: 1rem 1.8rem;
-            text-align: center;
-            backdrop-filter: blur(8px);
-            border: 1px solid cyan;
-            flex: 1;
-            min-width: 160px;
-            transition: 0.2s;
-        }
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #0ff;
-        }
-        .snake-animation {
-            background: #010a12;
-            border-radius: 1.8rem;
-            margin: 1.5rem 0;
-            padding: 0.5rem;
-            text-align: center;
-        }
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+  <img src="https://img.shields.io/badge/Embedded_Systems-FF6B00?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/IoT-FF6B6B?style=for-the-badge&logo=home-assistant&logoColor=white" />
+</p>
 
-        .connect-icons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin: 1.5rem 0 0.5rem;
-            flex-wrap: wrap;
-        }
-        .social-link {
-            background: #071a24;
-            padding: 10px 20px;
-            border-radius: 40px;
-            transition: all 0.25s;
-            font-size: 1rem;
-            font-weight: 500;
-            color: white;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            border: 1px solid #2ad4e380;
-        }
-        .social-link:hover {
-            transform: translateY(-5px);
-            background: #0e3a4b;
-            border-color: cyan;
-            box-shadow: 0 10px 18px rgba(0,0,0,0.4);
-        }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.75rem;
-            color: #6e9eb0;
-        }
-        hr {
-            border-color: #2ad4e320;
-            margin: 1rem 0;
-        }
-        @media (max-width: 680px) {
-            .card-inner { padding: 1.5rem; }
-            .glow-text { font-size: 1.5rem; }
-            .section-title { font-size: 1.4rem; }
-        }
-    </style>
-</head>
-<body>
+---
 
-<div class="readme-card">
-    <div class="card-inner">
-        
-        <!-- Animated Header with typing effect simulation -->
-        <div class="typing-header">
-            <h1 class="glow-text">
-                <i class="fas fa-microchip"></i> Adarsh Verma · Electronics Frontier
-            </h1>
-            <div style="margin-top: 8px;">
-                <span class="subhead">⚡ B.Tech (ECE) @ Gautam Buddha University | Embedded Systems & IoT | Circuit Design</span>
-            </div>
-        </div>
+### ⚙️ Core Skills
 
-        <!-- Profile row: location + contact + view counter -->
-        <div class="profile-badge">
-            <div class="contact-info">
-                <i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span>&nbsp;&nbsp;|&nbsp;
-                <i class="fas fa-envelope"></i> <span>adarsh.verma@ieee.org</span>&nbsp;&nbsp;
-                <i class="fab fa-linkedin"></i> <span>/in/adarsh-verma-embedded</span>
-            </div>
-            <div class="view-counter">
-                <i class="fas fa-eye"></i> Profile views: <span id="viewCount">1.8k</span> 
-            </div>
-        </div>
+<p align="center">
+  <code>Embedded Systems</code> •
+  <code>Analog Electronics</code> •
+  <code>Signal & Systems</code> •
+  <code>IoT Basics</code> •
+  <code>C Programming</code> •
+  <code>Python</code> •
+  <code>Circuit Design</code> •
+  <code>Microcontroller Interfacing</code> •
+  <code>Real-time Alert Systems</code>
+</p>
 
-        <!-- About Section - exactly from student details -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-user-astronaut"></i> 
-                <span>About Me</span>
-            </div>
-            <div class="about-text">
-                I am a motivated B.Tech student in Electronics and Communication Engineering at Gautam Buddha University with a strong interest in embedded systems, circuit design, and emerging communication technologies. <br/><br/>
-                I have worked on projects such as <strong>“Dual Display Smart Health Monitoring System with Alert Mechanism,”</strong> where I was involved in sensor integration, microcontroller interfacing, and real-time alert system implementation. This project strengthened my understanding of hardware-software integration and system optimization.<br/><br/>
-                I am continuously enhancing my technical skills in embedded systems, IoT, and programming. I am seeking opportunities in internships, research, and technical collaborations where I can contribute, learn, and grow as a future electronics engineer.
-            </div>
-        </div>
+---
 
-        <!-- Education Section (exactly from image) -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Education</span>
-            </div>
-            <div class="edu-card">
-                <div>
-                    <div class="edu-degree"><i class="fas fa-university"></i> Gautam Buddha University</div>
-                    <div>Bachelor of Technology - BTech, Electronics and Communication Engineering</div>
-                    <div class="course-list">
-                        <span class="course-chip">Python</span>
-                        <span class="course-chip">C Programming</span>
-                        <span class="course-chip">Embedded Systems</span>
-                        <span class="course-chip">Analog Electronics</span>
-                        <span class="course-chip">Signal & Systems</span>
-                        <span class="course-chip">IoT Basics</span>
-                        <span class="course-chip">HTML</span>
-                    </div>
-                </div>
-                <div class="edu-date">2025 – Present</div>
-            </div>
-        </div>
+### 📊 GitHub Stats
 
-        <!-- Tech Stack: CANVA, PYTHON, C, HTML, VS CODE as requested -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-code"></i>
-                <span>Tech Stack & Tools</span>
-            </div>
-            <div class="tech-stack">
-                <div class="tech-item"><i class="fab fa-python"></i> Python</div>
-                <div class="tech-item"><i class="fas fa-code"></i> C</div>
-                <div class="tech-item"><i class="fab fa-html5"></i> HTML5</div>
-                <div class="tech-item"><i class="fas fa-paintbrush"></i> Canva</div>
-                <div class="tech-item"><i class="fas fa-laptop-code"></i> VS Code</div>
-                <div class="tech-item"><i class="fas fa-microchip"></i> Embedded C</div>
-                <div class="tech-item"><i class="fas fa-chart-line"></i> IoT Frameworks</div>
-            </div>
-        </div>
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarshverma&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00F7FF&icon_color=00F7FF" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarshverma&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=00F7FF" />
+</p>
 
-        <!-- Core Skills section -->
-        <div class="section">
-            <div class="section-title">
-                <i class="fas fa-cogs"></i>
-                <span>Core Competencies</span>
-            </div>
-            <div class="skills-grid">
-                <span class="skill-badge">Embedded Systems</span>
-                <span class="skill-badge">Analog Electronics</span>
-                <span class="skill-badge">Signal & Systems</span>
-                <span class="skill-badge">IoT Basics</span>
-                <span class="skill-badge">C Programming</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">HTML & CSS</span>
-                <span class="skill-badge">Microcontroller Interfacing</span>
-                <span class="skill-badge">Circuit Design</span>
-                <span class="skill-badge">Real-time Alert Systems</span>
-            </div>
-        </div>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adarshverma&theme=radical&hide_border=true&background=0d1117&stroke=00F7FF&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" />
+</p>
 
-        <!-- Stats row with 3D cards -->
-        <div class="stats-row">
-            <div class="stat-card">
-                <div class="stat-number"><i class="fas fa-project-diagram"></i> 6+</div>
-                <div>Hardware Projects</div>
-                <small style="color:#7fcdff;">Embedded & IoT</small>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number"><i class="fas fa-code-branch"></i> 12+</div>
-                <div>Repositories</div>
-                <small style="color:#7fcdff;">C, Python, IoT</small>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number"><i class="fas fa-trophy"></i> 2</div>
-                <div>Project Showcase</div>
-                <small style="color:#7fcdff;">Health Monitoring</small>
-            </div>
-        </div>
+---
 
-        <!-- Fun Zone: Snake eating commits animated (3D interactive SVG) -->
-        <div class="snake-animation">
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 12px;">
-                <span style="color:#0ff;"><i class="fas fa-gamepad"></i> 🐍 GitHub contributions snake</span>
-                <span style="font-size: 12px; color:#4aa3c2;">commits & activity</span>
-            </div>
-            <div style="margin-top: 10px; background: #02101a; border-radius: 32px; padding: 8px; text-align: center;">
-                <svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
-                    <rect width="800" height="80" fill="#05161f" rx="20" ry="20" />
-                    <g>
-                        <circle cx="40" cy="40" r="8" fill="#0f0" stroke="#0ff" stroke-width="1.5">
-                            <animate attributeName="cx" values="40;760;40" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="60" cy="40" r="8" fill="#0fa" stroke="#0ff">
-                            <animate attributeName="cx" values="60;740;60" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="80" cy="40" r="8" fill="#0fa" stroke="#0ff">
-                            <animate attributeName="cx" values="80;720;80" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="100" cy="40" r="7" fill="#1f9">
-                            <animate attributeName="cx" values="100;700;100" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="120" cy="40" r="7" fill="#2aa">
-                            <animate attributeName="cx" values="120;680;120" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="140" cy="40" r="7" fill="#3cb">
-                            <animate attributeName="cx" values="140;660;140" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="160" cy="40" r="7" fill="#4ec">
-                            <animate attributeName="cx" values="160;640;160" dur="6s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="300" cy="40" r="5" fill="#ff4d4d">
-                            <animate attributeName="cx" values="300;500;300" dur="4s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="600" cy="40" r="5" fill="#ffaa33">
-                            <animate attributeName="cx" values="600;200;600" dur="5s" repeatCount="indefinite" />
-                        </circle>
-                    </g>
-                    <text x="400" y="70" fill="#aaf0ff" font-size="10" text-anchor="middle" font-family="monospace">🐍 snake eating commits → interactive fun zone</text>
-                </svg>
-            </div>
-        </div>
+### 📈 Project Highlights
 
-        <!-- Connect with Me section -->
-        <div class="connect-icons">
-            <a href="#" class="social-link"><i class="fab fa-github"></i> github/adarsh-verma</a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <a href="#" class="social-link"><i class="fas fa-envelope"></i> adarsh.verma@ieee.org</a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i> @adarsh_embedded</a>
-        </div>
-        
-        <hr />
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 0.8rem 0;">
-            <span style="background:#051e2c; padding: 5px 12px; border-radius: 30px;"><i class="fas fa-microchip"></i> Embedded Systems Enthusiast</span>
-            <span style="background:#051e2c; padding: 5px 12px; border-radius: 30px;"><i class="fas fa-waveform"></i> Signal Processing</span>
-            <span style="background:#051e2c; padding: 5px 12px; border-radius: 30px;"><i class="fas fa-plug"></i> IoT & Circuit Design</span>
-        </div>
-        <footer>
-            ⚡ “Bridging hardware and software for smarter solutions” — Adarsh Verma<br/>
-            📍 Delhi, India | Open for internships & research collaborations 🚀
-        </footer>
-        <div style="text-align: center; margin-top: 12px; font-size: 12px;">
-            <i class="fas fa-crown"></i> from <strong>@adarshverma_ece</strong> · 3D interactive profile
-        </div>
-    </div>
-</div>
+| Project | Description |
+|:---|:---|
+| **Dual Display Smart Health Monitoring System** | Sensor integration, microcontroller interfacing, real-time alert mechanism |
+| *More projects coming soon...* | *Embedded systems & IoT innovations* |
 
-<script>
-    (function(){
-        // Animated view counter
-        let count = 1850;
-        const viewSpan = document.getElementById('viewCount');
-        if(viewSpan){
-            setInterval(() => {
-                let increment = Math.floor(Math.random() * 4) + 1;
-                count += increment;
-                if(count > 3200) count = 1850;
-                viewSpan.innerText = count.toLocaleString();
-            }, 7000);
-        }
+---
 
-        // 3D tilt effect on card based on mouse movement
-        const card = document.querySelector('.readme-card');
-        if(card){
-            document.body.addEventListener('mousemove', (e) => {
-                let xAxis = (window.innerWidth / 2 - e.pageX) / 40;
-                let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
-                if(Math.abs(xAxis) < 10 && Math.abs(yAxis) < 10){
-                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.6}deg) rotateX(${yAxis * -0.4}deg) translateY(-5px)`;
-                } else {
-                    card.style.transform = `perspective(1000px) rotateY(${xAxis * 0.8}deg) rotateX(${yAxis * -0.6}deg) translateY(-4px)`;
-                }
-            });
-            document.body.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0px)';
-            });
-        }
+### 🌐 Connect With Me
 
-        // Simple animation on tech items (using anime.js for subtle floating)
-        if(typeof anime !== 'undefined'){
-            anime({
-                targets: '.tech-item',
-                translateY: [0, -4, 0],
-                duration: 2000,
-                loop: true,
-                easing: 'easeInOutQuad',
-                delay: anime.stagger(100)
-            });
-            anime({
-                targets: '.skill-badge',
-                scale: [1, 1.02, 1],
-                duration: 1800,
-                loop: true,
-                easing: 'easeInOutSine',
-                delay: anime.stagger(70)
-            });
-        }
-    })();
-</script>
-</body>
-</html>
+<p align="center">
+  <a href="mailto:adarsh.verma@ieee.org">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/adarsh-verma-embedded">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://github.com/adarshverma">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/adarsh_embedded">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+</p>
+
+---
+
+### 🎮 Fun Zone
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adarshverma/adarshverma/output/snake.svg" alt="Snake animation" />
+</p>
+
+---
+
+### 📝 Quote I Live By
+
+> *"Bridging hardware and software for smarter solutions"*
+
+---
+
+<p align="center">
+  <i>⚡ Open for internships, research & technical collaborations ⚡</i>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer&gradientColorStart=0aa0ff&gradientColorEnd=00F7FF" />
+</p>
