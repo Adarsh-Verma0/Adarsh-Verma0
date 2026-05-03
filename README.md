@@ -152,3 +152,4 @@ while True:
     build_iot_projects()
     collaborate_with_developers()
     contribute_to_open_source()
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Adarsh-Verma0&show_icons=true&theme=radical)
